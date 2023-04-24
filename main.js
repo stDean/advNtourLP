@@ -24,6 +24,23 @@ document.querySelector("#close-search").onclick = () => {
   searchForm.classList.remove("active");
 };
 
+// on scroll add the active class on the header div and when scroll === 0 remove the class
+window.onscroll = () => {
+  if (window.scrollY > 0) {
+    document.querySelector(".header").classList.add("active");
+  } else {
+    document.querySelector(".header").classList.remove("active");
+  }
+};
+
+window.onload = () => {
+  if (window.scrollY > 0) {
+    document.querySelector(".header").classList.add("active");
+  } else {
+    document.querySelector(".header").classList.remove("active");
+  }
+};
+
 // Slider js code, learnt from slider docs
 var swiper = new Swiper(".home-slider", {
   loop: true,
@@ -100,23 +117,23 @@ var swiper = new Swiper(".blogs-slider", {
   },
 });
 
-// var swiper = new Swiper(".clients-slider", {
-//   loop: true,
-//   grabCursor: true,
-//   spaceBetween: 20,
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     640: {
-//       slidesPerView: 2,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//     },
-//     1024: {
-//       slidesPerView: 4,
-//     },
-//   },
-// });
+var swiper = new Swiper(".clients-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
 // End slider js code
