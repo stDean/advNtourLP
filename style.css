@@ -60,12 +60,12 @@ section {
 
 /* End button */
 
-/* .heading {
+.heading {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: #10221b;
-} */
+}
 
 /* End General */
 
@@ -251,6 +251,154 @@ section {
   font-size: 3rem;
   color: #10221b;
 }
+
+/* End home styles */
+
+/* Category search */
+
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+.category .box-container .box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.category .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.category .box-container .box h3 {
+  font-size: 2rem;
+  color: #219150;
+}
+
+.category .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* End category styles */
+
+/* About styles */
+
+.about {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .image {
+  flex: 1 1 42rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about .image img {
+  width: 100%;
+  box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.about .content {
+  flex: 1 1 42rem;
+}
+
+.about .content h3 {
+  font-size: 3rem;
+  color: #219150;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* End About styles */
+
+/* Shop styles */
+
+.shop .slide {
+  border: 0.2rem solid #10221b;
+}
+
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.shop .slide .image .icons {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  /* take it down 7rem and hide with overflow */
+  transform: translateY(7rem);
+}
+
+/* show icons on hover */
+.shop .slide:hover .image .icons {
+  transform: translateY(0);
+}
+
+.shop .slide .image .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #10221b;
+  color: #fff;
+  margin: 0 0.2rem;
+}
+
+.shop .slide .image .icons a:hover {
+  background: #219150;
+}
+
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #219150;
+}
+
+.shop .slide .content .stars i {
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+/* Shop styles end */
 
 /* MEDIA QUARIES */
 /* from 992 - 1200px */
